@@ -1,12 +1,14 @@
 :root {
-    background-color: #011212;
+    background-color: #e6f4f4;
     color: #ffffff;
+    --card-bg-color: black;
     --card-padding: 20px;
     --card-border-radius: 10px;
     --max-width: 800px;
 }
 
 body {
+    background-color: white;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -18,10 +20,11 @@ body {
 }
 
 .card {
+    background-color: var(--card-bg-color);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     max-width: var(--max-width);
-    width: 100%;
+    width: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
