@@ -1,0 +1,86 @@
+:root {
+    background-color: #011212;
+    color: #ffffff;
+    --card-padding: 20px;
+    --card-border-radius: 10px;
+    --max-width: 800px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    max-width: var(--max-width);
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.card h3 {
+    margin-top: 20px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.card a {
+    color: #00ffff;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+    color: rgb(14, 14, 255);
+    
+}
+
+.card a:visited{
+    color: purple;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin: 10px 0;
+}
+
+.card ul li a {
+    color: #00ffff;
+}
+
+.card ul li a:hover {
+    text-decoration: underline;
+}
+
+.description {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}
