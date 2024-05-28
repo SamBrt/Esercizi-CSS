@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            font-size: 20px;
+            position: absolute;
+            width: 50%;
+            border: 5px solid grey ;
+            border-radius: 10px;
+        }
+
+         #link {
+            border: 3px  solid grey;
+        }
+
+        .container>div:not(:nth-child(1)) {
+            border: 2px solid grey;
+            text-align: center;
+        }
+
+        .header {
+            grid-column: span 4;
+            grid-row: 1;
+            background-color: rgb(97, 95, 95);
+            text-align: right;
+            color: white;
+            padding-right: 20px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .plus, .minus, .moltiplicazione, .divisione {
+            background-color: rgb(201, 197, 197) ;
+        }
+
+        .plus {}
+
+        .equal {
+            grid-row: span 4;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            background-color: rgb(244, 81, 81);
+            border-bottom-right-radius: 5px;
+        }
+
+        .one {}
+
+        .two {}
+
+        .three {}
+
+        .zero {
+            border-bottom-left-radius: 5px;
+        }
+
+        .point {}
+
+        .ac {}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="link" class="header">
+            <h3>0</h3>
+        </div>
+        <div id="link" class="plus">
+            <h4>+</h4>
+        </div>
+        <div id="link"  class="minus">
+            <h4>-</h4>
+        </div>
+        <div id="link"  class="moltiplicazione">
+            <h4>X</h4>
+        </div>
+        <div id="link"  class="divisione">
+            <h4>%</h4>
+        </div>
+        <div id="link"  class="sette">
+            <h4>7</h4>
+        </div>
+        <div id="link"  class="otto">
+            <h4>8</h4>
+        </div>
+        <div id="link"  class="nove">
+            <h4>9</h4>
+        </div>
+        <div id="link"  class="equal">
+            <h4>=</h4>
+        </div>
+        <div id="link"  class="quattro">
+            <h4>4</h4>
+        </div>
+        <div id="link"  class="cinque">
+            <h4>5</h4>
+        </div>
+        <div id="link"  class="sei">
+            <h4>6</h4>
+        </div>
+        <div id="link"  class="one">
+            <h4>1</h4>
+        </div>
+        <div id="link"  class="two">
+            <h4>2</h4>
+        </div>
+        <div id="link"  class="three">
+            <h4>3</h4>
+        </div>
+        <div id="link"  class="zero">
+            <h4>0</h4>
+        </div>
+        <div id="link"  class="point">
+            <h4>.</h4>
+        </div>
+        <div id="link"  class="ac">
+            <h4>AC</h4>
+        </div>
+
+    </div>
+</body>
+
+</html>
