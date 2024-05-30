@@ -1,0 +1,182 @@
+body {
+    font-family: Arial;
+}
+
+header {
+    position: sticky;
+}
+
+nav {
+    background-color: rgb(15, 31, 31);
+    color: #fff;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: -10px;
+}
+
+section {
+    margin-top: 800px;
+}
+
+nav,
+ul,
+li {
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 {
+    padding: 0;
+    margin: 0;
+    display: inline;
+    justify-content: space-between;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: inline;
+    justify-content: space-between;
+}
+
+nav ul li {
+    padding: 0;
+    margin: 0;
+    display: inline;
+    justify-content: space-between;
+
+}
+
+.options {
+    color: white;
+    margin-right: auto;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.link,
+.link2 {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover,
+.link2:hover {
+    text-decoration: underline;
+}
+
+.link2 {
+    margin-left: 5px;
+}
+
+.dropdown {
+    background-color: inherit;
+    border: none;
+}
+
+.dropdown:hover{
+    cursor: pointer;
+}
+
+.link2,
+.dropdown {
+    color: rgb(200, 200, 200);
+}
+
+.dbutton {
+    border: none;
+    background-color: inherit;
+    color: gray;
+}
+
+.dbutton:hover {
+    cursor: pointer;
+}
+
+.search {
+    background-color: inherit;
+    color: green;
+    border: 2px solid green;
+    border-radius: 5px;
+    margin-top: px;
+    height: 32px;
+
+}
+
+.search:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.searchinp {
+    height: 30px;
+    border-radius: 8px;
+    padding: 1px 10px 1px 10px;
+}
+
+.searchinp[placeholder="Search"] {
+    left: 10px
+}
+.hamburger-icon{
+    width: 30px;
+    height: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: 10px;
+}
+                                          /*---*/
+
+/*Rendi la navbar creata nell'esercizio Nav della lezione Introduzione ai layouts responsiva: sotto i 768 pixel, 
+la barra di navigazione viene sostituita da un menu hamburger senza funzionalità, che appare solamente. 
+Prova a creare il menu hamburger sia con regole CSS che utilizzando un'icona.*/
+                                    
+@media screen and (max-width: 768px) {
+    .options{
+        display: none;
+    }
+    .hamburger-icon{
+        width: 30px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: 10px;
+    }
+    nav  {
+        justify-content: space-between
+    }
+}
+                                        /*---*/
+                           
+@media screen and (max-width: 450px) {
+    .options{
+        display: none;
+    }
+    .hamburger-icon{
+        width: 30px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: 10px;
+    }
+    nav  {
+        justify-content: space-between
+    }
+
+    .search-ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
